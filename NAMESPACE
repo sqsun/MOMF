@@ -1,3 +1,5 @@
 useDynLib(MOMF)
 importFrom(Rcpp, evalCpp)
 exportPattern("^[[:alpha:]]+")
+
+import(matlib)
