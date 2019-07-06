@@ -20,7 +20,7 @@ The example data (`toy_example.Rdata`) is a simulated data.<br>
 Two main functions `momf.fit` and `momf.computeRef` are used to do deconvoluation analysis.
 ```R
 ### load MOMF package
-library(MOMF)
+> library(MOMF)
 
 ### load example data
 > load("toy_example.RData")
