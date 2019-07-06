@@ -3,9 +3,9 @@ Deconvolution analysis with the bulk RNA-seq data and single-cell RNA-seq data
 
 ## Installation
 ```R
-#install devtools packages (devtools package)
+### install devtools packages (devtools package)
 install.packages("devtools")
-#install MOMF package
+### install MOMF package
 devtools::install_github("sqsun/MOMF")
 ```
 
