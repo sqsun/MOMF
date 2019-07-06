@@ -73,7 +73,7 @@ momf.fit <- function(DataX, DataW=NULL, DataH=NULL, DataU=NULL, DataPriorU=NULL,
 			cat(paste("## the details of inputs data (MOMF)\n") )
 			cat(paste("## number of data sets: ", num_data,"\n") )
 			cat(paste("## number of genes: ", ncol(DataX[[1]]),"\n") )
-			stopifnot(ncol(DataX[[1]]) == ncol(DataX[[idata]]))
+			stopifnot(ncol(DataX[[1]]) == ncol(DataX[[2]]))
 			cat(paste("## number of cells in scRNA-seq data",idata,": ", nrow(DataX[[1]]),"\n") )
 			cat(paste("## number of individuals in bulk RNA-seq data",idata,": ", nrow(DataX[[2]]),"\n") )
 			cat(paste("## divergence: ", method,"\n") )
