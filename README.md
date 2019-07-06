@@ -25,15 +25,20 @@ library(MOMF)
 ### load example data
 > load("toy_example.RData")
 
-# two dataset with reference
+### compute the cell type specific expression level as reference
 > priorU <- momf.computeRef(sc_counts, sc_cell_type)
+
+### create the gene list for MOMF 
 > GList <- list(X1 = t(sc_counts), X2 = t(bulk_counts))
+
+### run MOMF
 > momf_res <- momf.fit(DataX = GList, DataPriorU=priorU, method="KL", rho=2, num_iter=3)
 
-# proportion of each cell type 
+### output the cell type proportions
 > cell_prop <- momf_res$cell_prop
+> heatmap(cell_prop)
 ```
 
 ## Support
-If that doesn't work, you can get in touch with us via the email (yangsheng@njmu.edu.cn).
+If that doesn't work, you can get in touch with us via the email (Sheng Yang: yangsheng@njmu.edu.cn).
 
