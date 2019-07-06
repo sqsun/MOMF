@@ -32,7 +32,7 @@ library(MOMF)
 > GList <- list(X1 = t(sc_counts), X2 = t(bulk_counts))
 
 ### run MOMF
-> momf_res <- momf.fit(DataX = GList, DataPriorU=priorU, method="KL", rho=2, num_iter=3)
+> momf_res <- momf.fit(DataX = GList, DataPriorU=priorU, method="KL", rho=2, num_iter=100)
 
 ### output the cell type proportions
 > cell_prop <- momf_res$cell_prop
