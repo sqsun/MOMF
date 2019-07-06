@@ -13,6 +13,7 @@ devtools::install_github("sqsun/MOMF")
 ### Simulation data
 The example data (`toy_example.Rdata`) is a simulated data.<br>
 * `sc_counts`: scRNA-seq gene expression matrix (#cells x #genes); 
+* `sc_cell_type`: cell types for scRNA-seq data (#cells x 1);
 * `bulk_counts`: bulk RNA-seq gene expression matrix (#individuals x #genes). <br>
 
 ### Toy example
@@ -39,5 +40,5 @@ library(MOMF)
 ```
 
 ## Support
-If that doesn't work, please reach out Sheng Yang (email:yangsheng@njmu.edu.cn).
+If it doesn't work, please reach out Sheng Yang (email: yangsheng@njmu.edu.cn).
 
