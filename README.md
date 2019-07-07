@@ -35,7 +35,7 @@ Two main functions `momf.fit` and `momf.computeRef` are used to do deconvoluatio
 > momf_res <- momf.fit(DataX = GList, DataPriorU=priorU, method="KL", rho=2, num_iter=100)
 
 ### output the cell type proportions
-> cell_prop <- momf_res$cell_prop
+> cell_prop <- momf_res$cell.prop
 > heatmap(cell_prop)
 ```
 
