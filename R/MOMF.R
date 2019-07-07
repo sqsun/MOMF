@@ -84,7 +84,7 @@ momf.fit <- function(DataX, DataW=NULL, DataH=NULL, DataU=NULL, DataPriorU=NULL,
 			cell_prop <- t(apply(res_mf$multiW$W2, 1,  function(x) x/sum(x)))
 			colnames(cell_prop) <- colnames(DataPriorU)
 			rownames(cell_prop) <- rownames(DataX[[2]])
-			cell_specific <- res_mf$U
+			cell_specific <- t(res_mf$U)
 			colnames(cell_specific) <- colnames(DataPriorU)
 			rownames(cell_specific) <- rownames(DataPriorU)
 			return(list("cell.prop"=cell_prop, "cell.specifc"=cell_specific) )
