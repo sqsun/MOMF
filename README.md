@@ -40,5 +40,5 @@ Two main functions `momf.fit` and `momf.computeRef` are used to do deconvoluatio
 ```
 
 ## Supports
-If it doesn't work, please reach out Sheng Yang (email: yangsheng@njmu.edu.cn).
+If it doesn't work, please reach out Xifang Sun and Sheng Yang (email: xfangsun@126.com or yangsheng@njmu.edu.cn).
 
