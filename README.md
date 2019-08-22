@@ -38,7 +38,9 @@ Two main functions `momf.fit` and `momf.computeRef` are used to do deconvoluatio
 > cell_prop <- momf_res$cell.prop
 > heatmap(cell_prop)
 ```
+## Citation
+Xifang Sun, Shiquan Sun, and Sheng Yang. *An efficient and flexible method for deconvoluting bulk RNAseq data
+with single-cell RNAseq data*, 2019, DIO: 10.5281/zenodo.3373980. 
 
 ## Supports
-If it doesn't work, please reach out Xifang Sun and Sheng Yang (email: xfangsun@126.com or yangsheng@njmu.edu.cn).
-
+Please reach out Xifang Sun or Sheng Yang (email: xfangsun@126.com or yangsheng@njmu.edu.cn) if you have any questions.
