@@ -7,5 +7,8 @@ Author: Shiquan Sun
 Maintainer: Shiquan Sun <shiquans@umich.com>
 Description: The package can fit single RNA-seq data set(SOMF) and multiple RNA-seq data sets (MOMF).
 License: GPL (>= 2)
-Imports: Rcpp (>= 0.12.14)
+Imports:
+   Rcpp (>= 0.12.14),
+   matlib,
+   car
 LinkingTo: Rcpp, RcppArmadillo
