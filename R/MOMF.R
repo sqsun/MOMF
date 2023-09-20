@@ -101,20 +101,16 @@ momf.fit <- function(DataX, DataW=NULL, DataH=NULL, DataU=NULL, DataPriorU=NULL,
 #' @export
 momf.computeRef <- function(sc_counts, cell_type){
 	
-	# cell type weight
-    weight <- sapply(unique(cell_type), function(ct){
-            y = sc_counts[ ,cell_type %in% ct, drop = FALSE]
-            sum(y)/sum(sc_counts)
-        })
-    U <- sapply(unique(cell_type), function(ct){
-            y = sc_counts[ ,cell_type %in% ct, drop = FALSE]
-            rowSums(y)/sum(y)*weight[names(weight) == ct]
-        })
-	U <- 1000000 * U
-	colnames(U) <- unique(cell_type)
-	rownames(U) <- rownames(sc_counts)
-	# return estimated mean for each cell type
-	return(U)
+  U <- sapply(unique(cell_type), function(ct){
+          y = sc_count[ ,cell_type %in% ct, drop = FALSE]
+          weight = sum(y)/sum(sc_count)
+          rowSums(y)/sum(y)*weight
+      })
+  U <- 1000000 * U
+  colnames(U) <- unique(cell_type)
+  rownames(U) <- rownames(sc_count)
+  # return estimated mean for each cell type
+  return(U)
 }# end func
 
 
